@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Walkthrough - Fynix Copilot</title>
+    <link rel="stylesheet" href="../assets/styles/homepage.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Fynix Copilot UI Walkthrough</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="index.html">Documentation</a>
+            <a href="quickstart.html">Quickstart Guide</a>
+            <a href="features/index.html">Features</a>
+            <a href="best-practices.html">Best Practices</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="content">
+        <h2>Fynix UI Walkthrough</h2>
+
+        <h3>Assistant Chat View</h3>
+        <p>
+            Click on the Fynix-Copilot Icon or use the shortcut <code>Cmd + Shift + 0</code> to open the sidebar, which contains the Assistant Chat View.
+            This is where users interact with Fynix Copilot. The Assistant Chat View has four tabs:
+            <strong>Chat</strong>, <strong>Guide</strong>, <strong>Settings</strong>, and <strong>History</strong>.
+        </p>
+        <p>
+            <strong>New Conversation:</strong> Click on the plus icon on the top-right of the Assistant Chat View to open a new conversation.
+        </p>
+        <figure>
+            <img src="../assets/images/image5.png" alt="Assistant Chat View" />
+            <figcaption>Assistant Chat View</figcaption>
+        </figure>
+
+        <h4>Chat Tab</h4>
+        <p>
+            In the Chat Tab, you have a welcome screen with quick commands to get started. At the bottom, you'll find the Chat Input Field.
+            Type your message and press Enter to send it to Fynix Copilot and get a response.
+        </p>
+        <h5>Mentions (@)</h5>
+        <p>
+            Click on the <code>@</code> symbol or type <code>@</code> in the Chat Input Field to open a list of supported mentions. Mentions allow
+            you to add more context to your interaction with Fynix Copilot.
+        </p>
+        <p><strong>Supported Mentions:</strong></p>
+        <ul>
+            <li><strong>@File:</strong> Opens a list of files to choose from, allowing for questions and commands on that file.</li>
+            <li><strong>@Code:</strong> Opens a list of functions in the repository for questions or commands on a specific function.</li>
+            <li><strong>@Folder:</strong> Opens a list of folders in the repository to ask questions about a folder.</li>
+            <li><strong>@Git Diff:</strong> Opens a list of Git diffs to select and add context to the chat.</li>
+            <li><strong>@Workspace:</strong> Mentions the entire workspace for context.</li>
+            <li><strong>@Web:</strong> Searches the query on the web.</li>
+            <li><strong>@Docs:</strong> Opens a list of user-added documents to reference in the chat.</li>
+            <li><strong>@Jira:</strong> Mentions Jira tickets.</li>
+            <li><strong>@Thread:</strong> Adds context from previous conversations using Chat ID.</li>
+        </ul>
+        <figure>
+            <img src="../assets/images/image6.png" alt="Mentions in Chat" />
+            <figcaption>Mentions in Chat</figcaption>
+        </figure>
+
+        <h5>Image Attachment</h5>
+        <p>
+            Click on the attachment icon at the bottom of the Chat Input Field to open the file manager (Finder/Windows Explorer). Select an image
+            to attach it to the Chat Input Field and ask questions about it.
+        </p>
+
+        <h5>Model Selection</h5>
+        <p>
+            Click on the model name in the Chat Input Field to open a list of models to select from. The selected model will be used to generate responses.
+        </p>
+
+        <h5>AI Review</h5>
+        <p>
+            Click on the Magic Wand icon at the bottom-left of the Assistant View or the top-right of the VS Code window to open the AI Review tab,
+            or use the shortcut <code>Cmd + Shift + R</code>. AI Review provides a comprehensive review of code quality and potential bugs.
+        </p>
+
+        <h5>Fynix Diagram</h5>
+        <p>
+            Click on the "Flowchart" icon at the bottom of the Assistant Chat View or the top-right of the VS Code window to open the Fynix Diagram
+            tab. This feature generates flowcharts and sequence diagrams based on your prompt or code.
+        </p>
+
+        <h5>Fynix Terminal</h5>
+        <p>
+            Click on the "Terminal Window" icon at the bottom of the Assistant Chat View or the top-right of the VS Code window to open the Fynix Terminal
+            tab, or use the shortcut <code>Cmd + Shift + L</code>. The Fynix Terminal is a natural language terminal.
+        </p>
+
+        <h3>Guide Tab</h3>
+        <p>
+            Click on the Guide tab to quickly access instructions on how to use Fynix Copilot. It contains four dropdown sections: Overview, Slash Commands,
+            Mentions, and Shortcuts. Use the search bar to find specific topics.
+        </p>
+        <figure>
+            <img src="../assets/images/image7.png" alt="Guide Tab" />
+            <figcaption>Guide Tab</figcaption>
+        </figure>
+
+        <h3>Settings Tab</h3>
+        <p>
+            The Settings tab allows you to customize your Fynix Copilot experience. It has five sub-sections:
+            <strong>General Settings</strong>, <strong>Advanced Settings</strong>, <strong>Account Settings</strong>, <strong>Model Settings</strong>,
+            and <strong>API Keys</strong>.
+        </p>
+        <figure>
+            <img src="../assets/images/image8.png" alt="Settings Tab" />
+            <figcaption>Settings Tab</figcaption>
+        </figure>
+
+        <h3>History Tab</h3>
+        <p>
+            The History Tab consists of all your previous conversations with Fynix. Users can search for a particular chat using keywords. Each conversation
+            has a unique Chat ID, which can be used in a new conversation to extract context from a previous chat. Users can also delete conversations by
+            clicking on the "bin" icon.
+        </p>
+        <figure>
+            <img src="../assets/images/image13.png" alt="History Tab" />
+            <figcaption>History Tab</figcaption>
+        </figure>
+
+        <h3>View and More Actions</h3>
+        <p>
+            Users can click on the three horizontal dots at the top of the tabs to view additional options, including:
+        </p>
+        <ul>
+            <li><strong>Export Conversation:</strong> Export the current conversation into a new file, which will open in the code editor.</li>
+            <li><strong>Logout:</strong> Log out of the current session.</li>
+            <li><strong>Report Bugs:</strong> Open a pop-up window to report bugs to the Fynix Copilot team.</li>
+        </ul>
+        <figure>
+            <img src="../assets/images/image14.png" alt="View and More Actions" />
+            <figcaption>View and More Actions</figcaption>
+        </figure>
+
+        <h3>Code Interaction Tools</h3>
+        <p>Fynix Copilot provides several tools for interacting with generated code:</p>
+        <ul>
+            <li><strong>Quick Reply:</strong> Hover over a paragraph in the generated code to click on the reply button for further questions.</li>
+            <li><strong>Quick Copy:</strong> Hover over a paragraph to copy specific parts of the text.</li>
+            <li><strong>Copy Whole Response:</strong> Click on the copy icon at the end of the response to copy all content.</li>
+            <li><strong>Regenerate Using a Different Model:</strong> Use the regenerate button at the end of the response to get a new result.</li>
+        </ul>
+        <figure>
+            <img src="../assets/images/image15.png" alt="Code Interaction Tools" />
+            <figcaption>Code Interaction Tools</figcaption>
+        </figure>
+
+        <h3>Generated Code Options</h3>
+        <p>For generated code snippets, users can:</p>
+        <ul>
+            <li><strong>Flowchart:</strong> Generate a diagram for the code using the "flowchart" icon.</li>
+            <li><strong>Insert At Selection:</strong> Replace the selected code in the file with the generated code.</li>
+            <li><strong>Insert In New File:</strong> Paste the generated code into a new file.</li>
+            <li><strong>Insert In Terminal:</strong> Paste the code into a new terminal window.</li>
+        </ul>
+        <figure>
+            <img src="../assets/images/image16.png" alt="Generated Code Options" />
+            <figcaption>Generated Code Options</figcaption>
+        </figure>
+
+        <h3>Input Editing and Threading</h3>
+        <p>
+            Users can edit input commands or prompts by clicking the "edit" icon beside the input. Generating a new response from the edited input creates a
+            new thread. Users can navigate between threads by clicking the left arrow for the previous response and the right arrow for the next response.
+        </p>
+        <figure>
+            <img src="../assets/images/image17.png" alt="Input Editing and Threading" />
+            <figcaption>Input Editing and Threading</figcaption>
+        </figure>
+
+        <h3>Feedback</h3>
+        <p>
+            Users can provide feedback on generated responses by clicking the thumbs-up or thumbs-down icons at the end of the response.
+        </p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Fynix. All rights reserved. | <a href="../index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slash Commands - Fynix Copilot</title>
-    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <link rel="stylesheet" href="../../assets/styles/homepage.css">
 </head>
 <body>
     <header>
@@ -16,13 +16,57 @@
         </nav>
     </header>
     <main>
-        <h2>Using Slash Commands</h2>
-        <p>Slash commands allow you to interact with Fynix Copilot in your IDE quickly. Examples:</p>
-        <ul>
-            <li><code>/new</code>: Create a new project structure.</li>
-            <li><code>/fix</code>: Automatically resolve code issues.</li>
-            <li><code>/test</code>: Generate unit tests for your code.</li>
-        </ul>
+        <section class="intro">
+            <img src="../../assets/images/Image18.png" alt="Fynix Slash Commands" class="command-image">
+            <p>Type <code>/</code> followed by a command name and press Enter to select the command. Press Enter again to execute the command in the chat. Please note: You need to select a code block or file before using a slash command.</p>
+        </section>
+        <section class="commands">
+            <h2>Slash Commands</h2>
+            <div class="command">
+                <h3>1. Get Help with <code>/help</code></h3>
+                <p>Use <code>/help</code> to get a list of available slash commands and their brief descriptions.</p>
+            </div>
+            <div class="command">
+                <h3>2. Project Scaffolding with <code>/new</code></h3>
+                <p>Automatically create project scaffolding based on your input.</p>
+                <p><strong>Example:</strong> Type <code>/new web app</code> in the chat to generate a basic directory structure and files for a web application. Click “Create Workspace” to finalize.</p>
+            </div>
+            <div class="command">
+                <h3>3. Code Improvement with <code>/fix</code> and <code>/refactor</code></h3>
+                <p>Fix errors or optimize code with these commands. Improve readability and performance effortlessly.</p>
+                <p><strong>Example:</strong> Select the code to improve, type <code>/fix</code>, and press Enter. Similarly, use <code>/refactor</code> to optimize the selected code.</p>
+            </div>
+            <div class="command">
+                <h3>4. Cross-Language Translation with <code>/translate</code></h3>
+                <p>Convert code from one programming language to another.</p>
+                <p><strong>Example:</strong> Select a code block, type <code>/translate Python to C++</code>, and the Copilot will handle the conversion.</p>
+            </div>
+            <div class="command">
+                <h3>5. Unit Test Generation with <code>/test</code></h3>
+                <p>Automate the creation of unit tests for your functions.</p>
+                <p><strong>Example:</strong> Select a function, type <code>/test</code>, and Fynix will generate the unit tests.</p>
+            </div>
+            <div class="command">
+                <h3>6. Documentation with <code>/doc</code></h3>
+                <p>Generate docstrings for the selected code or file.</p>
+                <p><strong>Example:</strong> Select a code block, type <code>/doc</code>, and send the command to generate documentation automatically.</p>
+            </div>
+            <div class="command">
+                <h3>7. Code Explanation with <code>/explain</code></h3>
+                <p>Get a line-by-line explanation of selected code.</p>
+                <p><strong>Example:</strong> Type <code>@index.html /explain</code> to receive a detailed explanation of the file named <code>index.html</code>.</p>
+            </div>
+            <div class="command">
+                <h3>8. Complete the Code with <code>/complete</code></h3>
+                <p>Generate or complete code from a description or partially written code.</p>
+                <p><strong>Example:</strong> Select the definition of <code>Add_to_cart()</code>, type <code>/complete</code>, and the Copilot will suggest the complete function implementation.</p>
+            </div>
+            <div class="command">
+                <h3>9. Visualize Code with <code>/diagram</code></h3>
+                <p>Generate a logical diagram of your code.</p>
+                <p><strong>Example:</strong> Type <code>@main.py /diagram</code> to generate a diagram of the Python file <code>main.py</code>.</p>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Fynix. All rights reserved.</p>

@@ -4,31 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fynix Copilot Documentation</title>
-    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/homepage.css">
+    <style>
+        /* Additional styles for documentation page */
+        .doc-card {
+            background: #2c2c54;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .doc-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        .doc-card h3 {
+            color: #74b9ff;
+            margin-bottom: 10px;
+        }
+        .doc-card p {
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1>Fynix Copilot Documentation</h1>
         <nav>
             <a href="../index.html">Home</a>
-            <a href="quickstart.html">Quickstart</a>
+            <a href="quickstart.html">Quickstart Guide</a>
             <a href="ui-walkthrough.html">UI Walkthrough</a>
             <a href="features/index.html">Features</a>
             <a href="best-practices.html">Best Practices</a>
         </nav>
     </header>
-    <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
         <h2>Welcome to Fynix Copilot Documentation</h2>
-        <p>Explore the guides, features, and best practices to make the most of Fynix Copilot.</p>
-        <ul>
-            <li><a href="quickstart.html">Quickstart Guide</a></li>
-            <li><a href="ui-walkthrough.html">Fynix UI Walkthrough</a></li>
-            <li><a href="features/index.html">Features Overview</a></li>
-            <li><a href="best-practices.html">Best Practices</a></li>
-        </ul>
-    </main>
+        <p>Explore comprehensive guides, tips, and best practices to make the most of Fynix Copilot.</p>
+       
+    </section>
+
+    <!-- Documentation Cards Section -->
+    <section id="doc-content" class="content">
+        <div class="doc-card">
+            <h3>Quickstart Guide</h3>
+            <p>Step-by-step instructions to set up Fynix Copilot and get started.</p>
+            <a href="quickstart.html" class="buttons">Read Guide</a>
+        </div>
+        <div class="doc-card">
+            <h3>UI Walkthrough</h3>
+            <p>Explore the Fynix Copilot interface and learn how to navigate its features.</p>
+            <a href="ui-walkthrough.html" class="buttons">View Walkthrough</a>
+        </div>
+        <div class="doc-card">
+            <h3>Features</h3>
+            <p>Discover all the powerful tools and integrations available in Fynix Copilot.</p>
+            <a href="features/index.html" class="buttons">Explore Features</a>
+        </div>
+        <div class="doc-card">
+            <h3>Best Practices</h3>
+            <p>Learn tips and strategies for using Fynix Copilot effectively.</p>
+            <a href="best-practices.html" class="buttons">View Best Practices</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Fynix. All rights reserved.</p>
+        <p>&copy; 2024 Fynix. All rights reserved. | <a href="#privacy-policy">Privacy Policy</a></p>
     </footer>
 </body>
 </html>

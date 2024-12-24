@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fynix Terminal - Fynix Copilot</title>
+    <link rel="stylesheet" href="../../assets/styles/homepage.css">
+</head>
+<body>
+    <header>
+        <h1>Fynix Terminal</h1>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../index.html">Docs Home</a>
+            <a href="index.html">Features Overview</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <img src="../../assets/images/image21.png" alt="Fynix Terminal" class="feature-image">
+            <p>
+                Use the Fynix Terminal to interact with your system using natural language. It converts natural language instructions directly into executable terminal commands, eliminating the need to memorize commands.
+            </p>
+        </section>
+        <section class="steps">
+            <h2>Steps to Use Fynix Terminal</h2>
+            <ol>
+                <li>
+                    Click on the <strong>"Fynix Terminal"</strong> icon at the bottom of the Assistant Chat view or the top right of the VSCode window to open the Fynix Terminal tab.
+                </li>
+                <li>
+                    Write your instruction in natural language and press Enter to send it to the Fynix Terminal. The terminal will generate the corresponding command.
+                </li>
+                <li>
+                    Review the command and press Enter to execute it.
+                </li>
+            </ol>
+        </section>
+        <section class="note">
+            <h3>Note:</h3>
+            <p>
+                As best practices, save environment variables and directory structures in "Rules for AI" to provide Fynix Terminal with the necessary context.
+            </p>
+        </section>
+        <section class="examples">
+            <h2>Examples</h2>
+            <div class="example">
+                <h3>1. Installing Requirements</h3>
+                <p>
+                    If you have a file named <code>requirements.txt</code> containing a list of libraries for your project, type:
+                </p>
+                <pre><code>install requirements</code></pre>
+                <p>Fynix Terminal will generate:</p>
+                <pre><code>$ pip install -r requirements.txt</code></pre>
+                <p>Press Enter to execute the command.</p>
+            </div>
+            <div class="example">
+                <h3>2. Creating Requirements File</h3>
+                <p>Instruction to Fynix Terminal:</p>
+                <pre><code>create a new file named requirements.txt and write the list of dependencies required for the following project in the requirements.txt file. 
+Project description: An e-commerce website using React for the frontend, Node.js for the backend, and MongoDB for the database. The website should include features like payment gateway integration, product recommendations, and user authentication.</code></pre>
+                <p>Fynix Terminal might generate:</p>
+                <pre><code>$ echo 'react 
+react-dom
+axios
+redux
+react-redux
+react-router-dom
+express
+mongoose
+jsonwebtoken
+bcryptjs
+stripe
+passport
+passport-local
+passport-jwt
+cors
+body-parser
+dotenv
+nodemon' > requirements.txt && echo 'Created requirements.txt with the list of dependencies.'</code></pre>
+            </div>
+            <div class="example">
+                <h3>3. Automated Workspace Setup</h3>
+                <p>Scenario: A developer wants to set up a workspace for a new project. They add project setup steps in "Rules for AI":</p>
+                <ul>
+                    <li>Clone the repo: <code>https://github.com/org/project-x.git</code></li>
+                    <li>Create a Python virtual environment inside the project folder.</li>
+                    <li>Install dependencies from <code>requirements.txt</code>.</li>
+                </ul>
+                <p>They type:</p>
+                <pre><code>Set up my workspace for Project X</code></pre>
+                <p>Fynix Terminal generates:</p>
+                <pre><code>git clone https://github.com/org/project-x.git && cd project-x && python -m venv env && source env/bin/activate && pip install -r requirements.txt && npm install</code></pre>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fynix. All rights reserved.</p>
+    </footer>
+</body>
+</html>

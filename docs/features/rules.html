@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules for AI - Fynix Copilot</title>
+    <link rel="stylesheet" href="../../assets/styles/homepage.css">
+</head>
+<body>
+    <header>
+        <h1>Rules for AI</h1>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../index.html">Docs Home</a>
+            <a href="index.html">Features Overview</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <p>
+                Use <strong>Rules for AI</strong> to add custom rules for Fynix Copilot. These rules provide additional context and guide the behavior of Fynix Copilot for each chat or result it produces.
+            </p>
+        </section>
+        <section class="steps">
+            <h2>Steps to Add Rules</h2>
+            <ol>
+                <li>Go to the <strong>Settings Tab</strong> in the Assistant Chat View and click on <strong>Advanced Settings</strong>.</li>
+                <li>Under <strong>Rules for AI</strong>, add your custom rule.</li>
+                <li>Once added, the rule is automatically applied, and you’ll see a “Settings Updated Successfully” pop-up on the bottom-right of VS Code.</li>
+            </ol>
+        </section>
+        <section class="use-cases">
+            <h2>Use Cases</h2>
+            <div class="use-case">
+                <h3>1. Directory Structure Awareness</h3>
+                <p>
+                    When updating a repository's structure, copy and paste the directory structure into "Rules for AI". This allows Fynix Copilot to provide accurate responses based on the project's layout.
+                </p>
+                <pre><code>
+Example Directory:
+project-root/
+├── index.html
+├── css/
+│   ├── styles.css
+│   ├── reset.css
+├── js/
+│   ├── main.js
+│   ├── utils.js
+├── images/
+│   ├── logo.png
+│   ├── banner.jpg
+├── assets/
+│   ├── fonts/
+│   ├── icons/
+├── README.md
+├── .gitignore
+└── package.json
+</code></pre>
+                <p>
+                    Example: Typing <code>delete banner</code> in the Fynix Terminal will generate:
+                    <pre><code>$ rm project-root/images/banner.jpg && echo 'banner.jpg has been successfully deleted.'</code></pre>
+                </p>
+            </div>
+
+            <div class="use-case">
+                <h3>2. Enforcing Project-Specific Coding Standards</h3>
+                <p>
+                    Scenario: Ensure consistent coding practices for multi-developer projects.
+                </p>
+                <p>
+                    Rule: <em>“All variable names must follow snake_case, and functions must include docstrings with parameters and return types.”</em>
+                </p>
+                <p>
+                    Workflow: Use <code>/fix</code> or <code>/doc</code> commands to refactor code or generate documentation adhering to these rules.
+                </p>
+            </div>
+
+            <div class="use-case">
+                <h3>3. Tailored Responses for Domain-Specific Applications</h3>
+                <p>
+                    Scenario: Fintech applications require compliance with security standards.
+                </p>
+                <p>
+                    Rule: <em>“Ensure no sensitive data (e.g., SSN, credit card numbers) is logged in plain text. Use encryption for sensitive fields.”</em>
+                </p>
+                <p>
+                    Workflow: Use <code>/fix</code> to enforce security practices, and add the same rule in AI Review to flag any violations.
+                </p>
+            </div>
+
+            <div class="use-case">
+                <h3>4. Enforcing Best Practices for New Hires</h3>
+                <p>
+                    Scenario: Ensure junior developers follow best practices for React or Django.
+                </p>
+                <p>
+                    Rule: <em>“All React components must be functional components, and PropTypes should be defined for each component.”</em>
+                </p>
+                <p>
+                    Workflow: Use <code>/new</code> to scaffold best-practice components and <code>/fix</code> to align legacy code.
+                </p>
+            </div>
+
+            <div class="use-case">
+                <h3>5. Automating Environment-Specific Adjustments</h3>
+                <p>
+                    Scenario: A project runs in multiple environments (e.g., development, staging, production).
+                </p>
+                <p>
+                    Rule: <em>“Use mock APIs for development and staging environments. Use production APIs only in production builds.”</em>
+                </p>
+                <p>
+                    Workflow: Use <code>/complete</code> to generate code with environment-specific configurations and include this rule in AI Review to prevent exposing production credentials.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fynix. All rights reserved.</p>
+    </footer>
+</body>
+</html>

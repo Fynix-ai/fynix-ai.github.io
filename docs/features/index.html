@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fynix Copilot Features</title>
-    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <link rel="stylesheet" href="../../assets/styles/homepage.css">
+    <style>
+        /* Additional styles for feature page */
+        .feature-card {
+            background: #2c2c54;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        .feature-card h3 {
+            color: #74b9ff;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1>Fynix Copilot Features</h1>
         <nav>
@@ -15,22 +44,41 @@
             <a href="slash-commands.html">Slash Commands</a>
             <a href="mentions.html">Mentions</a>
             <a href="ai-review.html">AI Review</a>
+            <a href="terminal.html">Fynix Terminal</a>
+            <a href="diagram.html">Fynix Diagram</a>
+            <a href="rules.html">Rules for AI</a>
+            <a href="vision.html">Vision Capabilities</a>
         </nav>
     </header>
-    <main>
-        <h2>Overview of Features</h2>
-        <ul>
-            <li><a href="slash-commands.html">Slash Commands</a></li>
-            <li><a href="mentions.html">Mentions</a></li>
-            <li><a href="ai-review.html">AI Review</a></li>
-            <li><a href="terminal.html">Fynix Terminal</a></li>
-            <li><a href="diagram.html">Fynix Diagram</a></li>
-            <li><a href="rules.html">Rules for AI</a></li>
-            <li><a href="vision.html">Vision Capabilities</a></li>
-        </ul>
-    </main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Explore the Features of Fynix Copilot</h2>
+        <p>Fynix Copilot comes packed with a range of features to help you code efficiently.</p>
+    </section>
+
+    <!-- Features Cards Section -->
+    <section id="features-content" class="content">
+        <div class="feature-card">
+            <h3>Real-time Code Suggestions</h3>
+            <p>While you type, Fynix Copilot provides intelligent suggestions based on your current code context. These suggestions help reduce coding errors and increase speed.</p>
+            <p><strong>Example:</strong> Start typing <code>function add(a, b)</code> in a Python file, and Copilot will suggest <code>return a + b</code>.</p>
+            <p>You can turn off real-time inline code suggestions from Settings.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Text to Code ChatBox</h3>
+            <p>Translate plain text descriptions into code using the Text to Code feature from the chat view. Simply type out a description of what you want to achieve, and Copilot will generate code snippets based on it.</p>
+            <p><strong>Example:</strong> Type <code>function to capitalize first letter of a string in Javascript</code> in the chat view and press enter. Copilot will provide a JavaScript function to do so.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Powerful Tools and Integrations</h3>
+            <p>Fynix Copilot offers features like Slash Commands, Mentions, AI Review, Fynix Terminal, Diagrams, Rules for AI, and Vision Capabilities, making it a comprehensive tool for all your coding needs.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Fynix. All rights reserved.</p>
+        <p>&copy; 2024 Fynix. All rights reserved. | <a href="#privacy-policy">Privacy Policy</a></p>
     </footer>
 </body>
 </html>

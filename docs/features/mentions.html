@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions - Fynix Copilot</title>
+    <link rel="stylesheet" href="../../assets/styles/homepage.css">
+</head>
+<body>
+    <header>
+        <h1>Mentions</h1>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../index.html">Docs Home</a>
+            <a href="index.html">Features Overview</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <img src="../../assets/images/image19.png" alt="Mentions Overview" class="command-image">
+        </section>
+        <section class="commands">
+            <h2>Mentions Features</h2>
+
+            <div class="command">
+                <h3>1. Mention and Interact with a File</h3>
+                <p>
+                    Use <code>@file</code> and press Enter to see the list of files in the entire workspace. Select a specific file and chat with it using natural language or slash commands. 
+                    Directly use <code>@</code> followed by the name of the file to mention and interact with it.
+                </p>
+                <h4>Use Cases:</h4>
+                <ul>
+                    <li>
+                        <strong>Dependency Management Across Multiple Files:</strong> 
+                        Type: <code>Generate a list of dependencies based on the following files: @file1.filetype, @file2.filetype, etc.</code> 
+                        Then click on “Insert in new file” to generate a file like <code>requirements.txt</code>.
+                    </li>
+                    <li>
+                        <strong>Contextual Debugging of Specific Files:</strong> 
+                        Mention files like <code>@main.py</code> and <code>@utils.py</code> to analyze their relationship and identify potential issues like mismatched function parameters or missing imports.
+                    </li>
+                    <li>
+                        <strong>Cross-File Code Refactoring:</strong> 
+                        Mention files like <code>@file1.py</code> and <code>@file2.py</code> to refactor duplicate code into a new module like <code>common_utils.py</code>.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="command">
+                <h3>2. Mention and Interact with Specific Functions</h3>
+                <p>
+                    Use <code>@code</code> and press Enter to see a list of functions in the workspace. Select a specific function and interact with it using natural language or slash commands.
+                </p>
+            </div>
+
+            <div class="command">
+                <h3>3. Mention and Interact with a Folder</h3>
+                <p>
+                    Use <code>@folder</code> and press Enter to see the list of folders in the workspace. Select a specific folder and interact with it using natural language or slash commands.
+                </p>
+            </div>
+
+            <div class="command">
+                <h3>4. Get Suggestions on Git Diff</h3>
+                <p>
+                    Use <code>@Git</code> to see a list of commits. Select one to view differences and get suggestions from Fynix. 
+                    Use slash commands like <code>/explain</code> to get detailed explanations of Git differences.
+                </p>
+            </div>
+
+            <div class="command">
+                <h3>5. Workspace Analysis with Mentions</h3>
+                <p>
+                    Fynix Copilot offers context-aware suggestions based on your codebase. Mention <code>@Workspace</code> in the chat to analyze the entire workspace, ask questions, and receive tailored insights.
+                </p>
+            </div>
+
+            <div class="command">
+                <h3>6. Get Answers from Web</h3>
+                <p>
+                    Use <code>@web</code> to let Fynix browse the internet and provide relevant information. 
+                    Example: <code>@web list down features from the latest Python release</code>.
+                </p>
+            </div>
+
+            <div class="command">
+                <h3>7. Interactive Document Engagement with <code>@docs</code></h3>
+                <p>
+                    Engage with documents interactively. Use <code>@docs</code> to select a saved document or add a new one. Fynix will assist in discussions based on the document's content.
+                </p>
+            </div>
+
+            <div class="command">
+                <h3>8. Jira Tickets</h3>
+                <p>
+                    Mention Jira tickets directly. Configure your organization's Jira link and API key in settings. 
+                    Use: <code>@jira [ticket ID] [instructions]</code> to interact with Jira tickets and resolve them in your IDE.
+                </p>
+            </div>
+
+            <div class="command">
+                <h3>9. Auto Detect Links</h3>
+                <p>
+                    Paste any link in the chat to interact with it. Example: Paste a documentation link of a library to ask questions or gain insights.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fynix. All rights reserved.</p>
+    </footer>
+</body>
+</html>
