@@ -1,2 +1,2 @@
-# fynix-ai.github.io
-Fynix ai Github Page
+# Fynix AI
+Welcome to Fynix AI - Your AI Coding Assistant!
