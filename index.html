@@ -6,58 +6,90 @@
     <title>Fynix AI - The Future of AI-Powered Coding</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: #2c2c54;
+            background: linear-gradient(to bottom, #2c2c54, #1e1e44);
             color: #ffffff;
         }
+
+        /* Header */
         header {
             background: #3b3b98;
-            padding: 20px;
-            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
         header h1 {
+            text-align: center;
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
         }
         nav {
             display: flex;
             justify-content: center;
-            margin: 20px 0;
+            margin-top: 10px;
         }
         nav a {
             margin: 0 15px;
             color: #ffffff;
             text-decoration: none;
             font-size: 1.2rem;
+            transition: color 0.3s ease-in-out;
         }
+        nav a:hover {
+            color: #74b9ff;
+        }
+
+        /* Hero Section */
         .hero {
             text-align: center;
-            padding: 50px 20px;
+            padding: 80px 20px;
             background: linear-gradient(120deg, #6c5ce7, #74b9ff);
+            border-bottom: 5px solid #3b3b98;
+            animation: fadeIn 1.5s ease-in-out;
         }
         .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: 3rem;
+            margin-bottom: 20px;
         }
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 10px auto;
+            line-height: 1.6;
         }
         .buttons {
-            margin: 20px 0;
+            margin-top: 30px;
         }
         .buttons a {
             margin: 0 10px;
-            padding: 10px 20px;
-            border: 2px solid #ffffff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
             color: #ffffff;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 25px;
+            background: #3b3b98;
+            transition: background 0.3s ease-in-out;
         }
-        section {
-            padding: 40px 20px;
+        .buttons a:hover {
+            background: #ffffff;
+            color: #3b3b98;
+        }
+
+        /* Features Section */
+        #features {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        #features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
         }
         .features {
             display: flex;
@@ -65,23 +97,76 @@
             flex-wrap: wrap;
         }
         .feature {
-            margin: 20px;
-            padding: 20px;
             background: #2d3436;
-            border-radius: 10px;
-            width: 30%;
-        }
-        footer {
-            text-align: center;
             padding: 20px;
+            margin: 15px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .feature:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .feature h3 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+            color: #74b9ff;
+        }
+        .feature p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
             background: #222f3e;
+            padding: 20px 0;
+            text-align: center;
+            color: #ffffff;
+            border-top: 5px solid #3b3b98;
         }
         footer a {
             color: #74b9ff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .feature {
+                width: 90%;
+                margin: 10px auto;
+            }
+            nav a {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1>Fynix AI</h1>
         <nav>
@@ -91,6 +176,8 @@
             <a href="#try-now">Try Now</a>
         </nav>
     </header>
+
+    <!-- Hero Section -->
     <section class="hero">
         <h2>Introducing Fynix Copilot</h2>
         <p>The Future of AI-Powered Coding</p>
@@ -100,6 +187,8 @@
             <a href="#watch-demo">Watch Demo</a>
         </div>
     </section>
+
+    <!-- Features Section -->
     <section id="features">
         <h2>Features</h2>
         <div class="features">
@@ -117,6 +206,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Fynix. All rights reserved. | <a href="#privacy-policy">Privacy Policy</a></p>
     </footer>
