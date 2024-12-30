@@ -160,3 +160,73 @@ footer a:hover {
         font-size: 1rem;
     }
 }
+
+/* About Us Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #1e1e44;
+    color: #ffffff;
+}
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.about-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.8;
+}
+.about-content strong {
+    font-size: 1.4rem;
+    color: #74b9ff;
+}
+
+#contact a {
+    color: #74b9ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+#contact a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* General Image Styling */
+/* General Image Styling */
+img {
+    max-width: 40%; /* Ensures images do not exceed 40% of their container */
+    max-height: 400px; /* Restricts excessive height */
+    object-fit: contain; /* Ensures images scale proportionally without distortion */
+    height: auto; /* Keeps height responsive */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* Optional: For rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
+}
+
+/* Specific styling for images within a section */
+.section img {
+    max-width: 60%; /* Restricts images to fit within 60% of the section width */
+    margin: 20px auto; /* Center the images */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    img {
+        max-width: 90%; /* Allow images to use more screen space on small devices */
+        max-height: 300px; /* Restrict excessive height */
+    }
+    .feature img {
+        max-width: 100%; /* Ensure images inside feature cards fill the space properly */
+        max-height: 250px;
+    }
+}
+
+.hero img {
+    max-width: 50%; /* Adjust size specifically for hero section images */
+    max-height: 300px; /* Prevent excessive height */
+    margin: 20px auto;
+}
